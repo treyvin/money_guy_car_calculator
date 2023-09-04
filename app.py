@@ -7,10 +7,8 @@ st.set_page_config(
     page_title=page_title,
     layout="wide",
     menu_items={
-        # TODO: Update these
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://github.com/",
-        'About': "update this"
+        'Report a bug': "https://github.com/culpgrant/money_guy_car_calculator/issues",
+        'About': "This is a fun calculator I created to help with the 20/3/8 rule"
     },
     initial_sidebar_state="collapsed"
 )
@@ -20,7 +18,7 @@ st.subheader(page_sub_header)
 
 # Get the Inputs from People
 st.markdown("***")
-st.subheader("Please enter in your data") # TODO Make this smaller
+st.subheader("Please enter in your data")
 col1, col2 = st.columns(2)
 with col1:
     input_yearly_gross_income = st.number_input("Yearly Gross Income", value=150000, min_value=1, help="Gross Income is before taxes")
@@ -63,4 +61,7 @@ st.markdown(final_text)
 
 # Footer
 st.markdown("***")
-# TODO: Disclamer for all Money Guy show resources
+st.markdown("""
+Please see the [Money Guy](https://moneyguy.com/) show for all resources!\n
+This webpage not affiliated with the Money Guy Show.
+""")
