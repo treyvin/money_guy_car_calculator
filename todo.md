@@ -4,4 +4,6 @@ Car Buying Streamlit App
 ### Todo
 - [ ] Monthly Car Payment vs. Monthly Investments
 - [ ] Better formatting for number inputs
-- [ ] Github actions
+- [ ] CI/CD and Code Quality
+  - [ ] Pre-Commit Hooks
+  - [ ] Run Precommit Hooks in CI pipeline
