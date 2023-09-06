@@ -5,5 +5,5 @@ Car Buying Streamlit App
 - [ ] Monthly Car Payment vs. Monthly Investments
 - [ ] Better formatting for number inputs
 - [ ] CI/CD and Code Quality
-  - [ ] Pre-Commit Hooks
+  - [x] Pre-Commit Hooks
   - [ ] Run Precommit Hooks in CI pipeline
