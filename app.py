@@ -1,3 +1,6 @@
+"""
+Main app file for Streamlit Application
+"""
 import streamlit as st
 
 page_title = "Car Buying 20/3/8 Calculator"
