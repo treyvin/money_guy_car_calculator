@@ -4,9 +4,6 @@ on:
     pull_request:
       branches:
         - main
-    push:
-      branches:
-        - feature/create_github_action
 
 jobs:
     pre-commit:
@@ -17,5 +14,3 @@ jobs:
               with:
                 python-version: '3.10'
             - uses: pre-commit/action@v3.0.0
-            # pre-commit run --from-ref origin/HEAD --to-ref HEAD
-            # https://pre-commit.com/#usage-in-continuous-integration
