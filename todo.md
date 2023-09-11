@@ -6,4 +6,7 @@ Car Buying Streamlit App
 - [ ] Better formatting for number inputs
 - [ ] CI/CD and Code Quality
   - [x] Pre-Commit Hooks
-  - [ ] Run Precommit Hooks in CI pipeline
+  - [x] Run Precommit Hooks in CI pipeline
+  - [ ] Split into functions
+  - [ ] Create Tests for 100% coverage
+  - [ ] Run Pytests in Github actions w/ coverage and publish results. Make test directory
