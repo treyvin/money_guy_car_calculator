@@ -1,3 +1,8 @@
+"""
+Useful functions for the streamlit application
+"""
+
+
 def clean_divide(numerator: float, denominator: float, round_decimal: int) -> float:
     """Function to divide and handle for 0 with an option to round.
     If rounding to the 0 place it will return an integer
