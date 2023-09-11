@@ -50,17 +50,18 @@ with col3_assumptions:
     )
 
 # Calculating the Max Total Price of Loan w/ terms
-down_payment_decimal = app_functions.clean_divide(input_percent_down, 100, 0)
+down_payment_decimal = app_functions.clean_divide(input_percent_down, 100, 2)
 monthly_gross_income = app_functions.clean_divide(input_yearly_gross_income, 12, 0)
 monthly_investment = app_functions.clean_divide(input_yearly_investments, 12, 0)
 max_monthly_payment = monthly_gross_income * 0.08
 interest_rate_per_month = (input_interest_rate / 100) / 12
 number_months_loan = input_yr_car_loan * 12
-max_loan_amount = max_monthly_payment / (
-    ((interest_rate_per_month * (1 + interest_rate_per_month) ** number_months_loan))
-    / ((1 + interest_rate_per_month) ** number_months_loan - 1)
+max_loan_amount = app_functions.calc_max_loan_amount(
+    max_monthly_payment, interest_rate_per_month, number_months_loan
 )
-max_car_amount = max_loan_amount / (1 - down_payment_decimal)
+max_car_amount = app_functions.clean_divide(
+    max_loan_amount, 1 - down_payment_decimal, 0
+)
 down_payment_amount = max_car_amount * down_payment_decimal
 yearly_payment = app_functions.clean_divide(max_loan_amount, input_yr_car_loan, 0)
 
@@ -69,9 +70,9 @@ st.markdown("***")
 final_text = f"""
 
 ### Result:
-The maximum car you can afford is: ${round(max_car_amount)}.\n
-Your downpayment would be: ${round(down_payment_amount)}.\n
-Your total loan amount would be: ${round(max_loan_amount)}.\n
+The maximum car you can afford is: ${round(max_car_amount)}\n
+Your downpayment would be: ${round(down_payment_amount)}\n
+Your total loan amount would be: ${round(max_loan_amount)}\n
 
 """
 st.markdown(final_text)
