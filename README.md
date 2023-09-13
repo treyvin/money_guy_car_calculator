@@ -2,6 +2,7 @@
 
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![CI Pipeline](https://github.com/culpgrant/money_guy_car_calculator/actions/workflows/ci_pipeline.yml/badge.svg)](https://github.com/culpgrant/money_guy_car_calculator/actions/workflows/ci_pipeline.yml)
 
 
 # Money Guy Car 20/3/8 Rule Calculator
