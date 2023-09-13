@@ -23,6 +23,7 @@ repos:
   hooks:
   -   id: interrogate
       args: [-v, --fail-under=100, --ignore-init-module]
+      pass_filenames: false
 
 - repo: https://github.com/pycqa/isort
   rev: 5.12.0
