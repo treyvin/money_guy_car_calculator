@@ -23,14 +23,14 @@ def clean_divide(numerator: float, denominator: float, round_decimal: int) -> fl
 
 
 def calc_max_loan_amount(
-    monthly_payment: float, interest_rate_per_month: float, number_months_loan: int
+    monthly_payment: float, interest_rate_per_month: float, number_months_loan: float
 ) -> float:
     """Formula used to calculate the max loan amount based on the parameters
 
     Args:
         max_monthly_payment (float): The max amount can pay for a monthly payment
         interest_rate_per_month (float): Interest rate on the loan
-        number_months_loan (int): Length of the loan in Months
+        number_months_loan (float): Length of the loan in Months
 
     Returns:
         float: the max total amount to borrow
