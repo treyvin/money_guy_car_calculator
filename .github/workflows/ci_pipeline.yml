@@ -48,6 +48,7 @@ jobs:
               run: |
                 pytest --junitxml=junit/test-results.xml --cov --cov-report xml
             - name: Pytest coverage comment
+              id: coverageComment
               uses: MishaKav/pytest-coverage-comment@v1.1.48
               with:
                   pytest-xml-coverage-path: ./coverage.xml
