@@ -45,7 +45,7 @@ jobs:
               uses: pre-commit/action@v3.0.0
             - name: Test with pytest
               run: |
-                pytest --junitxml=junit/test-results.xml --cov-report=html
+                pytest --junitxml=junit/test-results.xml --cov --cov-report xml
             - name: Pytest coverage comment
               uses: MishaKav/pytest-coverage-comment@v1.1.48
               with:
