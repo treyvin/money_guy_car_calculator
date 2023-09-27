@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "money-guy-car-calculator"
+version = "0.1.0"
+description = "Streamlit app that is used for money guy car calculator"
+authors = ["Grant Culp <grant.culp@kraftheinz.com>"]
+license = "Apache"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,!=3.9.7"
+streamlit = "^1.27.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pre-commit = "^3.4.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
