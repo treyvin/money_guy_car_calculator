@@ -4,6 +4,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![CI Pipeline](https://github.com/culpgrant/money_guy_car_calculator/actions/workflows/ci_pipeline.yml/badge.svg)](https://github.com/culpgrant/money_guy_car_calculator/actions/workflows/ci_pipeline.yml)
 
+**You can view [this app here!](https://moneyguycarcalculator.streamlit.app/)**
 
 # Money Guy Car 20/3/8 Rule Calculator
 This is a fun streamlit app I created to help people apply the Money Guy Show 20/3/8 car buying rule.
