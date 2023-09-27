@@ -38,8 +38,9 @@ repos:
   rev: 1.6.1
   hooks:
   -   id: poetry-check
-      name: Check that Poetry is allset
+      name: Check that Poetry is all set
   -   id: poetry-lock
       name: Make sure lock file is up to date
+      args: [--no-update]
   -   id: poetry-export
       name: Sync to a requirements.txt
