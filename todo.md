@@ -9,4 +9,5 @@ Car Buying Streamlit App
   - [x] Run Precommit Hooks in CI pipeline
   - [ ] Split into functions
   - [ ] Create Tests for 100% coverage
-  - [ ] Run Pytests in Github actions w/ coverage and publish results. Make test directory
+  - [x] Run Pytests in Github actions w/ coverage and publish results. Make test directory
+- [x] Switch to Poetry
